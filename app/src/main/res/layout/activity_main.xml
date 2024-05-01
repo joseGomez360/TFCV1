@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- ImageView para mostrar el logo de la aplicación -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/app" />
+
+    <!-- TextView para mostrar el mensaje de bienvenida -->
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bienvenido a HabitTracker"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- EditText para ingresar el nombre de usuario -->
+    <EditText
+        android:id="@+id/username_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress" />
+
+    <!-- EditText para ingresar la contraseña -->
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:password="true" />
+
+    <!-- Botón para iniciar sesión -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Login" />
+
+    <!-- Botón para crear un nuevo usuario -->
+    <Button
+        android:id="@+id/nuevo_usuario_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nuevo Usuario" />
+
+    <!-- TextView para mostrar el texto de recuperación de contraseña -->
+    <TextView
+        android:id="@+id/forgot_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="¿Olvidate tu contraseña?"
+        android:textColor="@android:color/holo_blue_bright" />
+</LinearLayout>

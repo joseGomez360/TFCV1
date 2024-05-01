@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/image_button_top_left"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/engranaje" />
+
+        <ImageButton
+            android:id="@+id/image_button_top_center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/casa" />
+
+        <ImageButton
+            android:id="@+id/image_button_top_right"
+            android:layout_width="62dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:scaleType="fitCenter"
+            android:src="@drawable/lupa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/image_button_left"
+            android:layout_width="0dp"
+            android:layout_height="134dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/usuarioL" />
+
+        <ImageButton
+            android:id="@+id/image_button_center"
+            android:layout_width="0dp"
+            android:layout_height="133dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/usuarioC" />
+
+        <ImageButton
+            android:id="@+id/image_button_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/usuarioR" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/text_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
