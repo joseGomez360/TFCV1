@@ -1,10 +1,12 @@
-package com.example.tfc_v1.Main
-
-
+import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.tfc_v1.Main.ResetPasswordActivity
+import com.example.tfc_v1.Main.ScheduleAdapter
+import com.example.tfc_v1.Main.ScheduleItem
 
 class Main : AppCompatActivity() {
 
@@ -25,5 +27,15 @@ class Main : AppCompatActivity() {
         val recyclerView = findViewById<RecyclerView>(R.id.text_list_view)
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = ScheduleAdapter(scheduleList)
+
+        val forgotPasswordText = findViewById<TextView>(R.id.forgot_password_text)
+        forgotPasswordText.setOnClickListener {
+            val intent = Intent(this, ResetPasswordActivity::class.java)
+            startActivity(intent)
+        }
     }
+}
+
+class ScheduleItem(val time: String, val description: String) {
+    // Puedes agregar métodos u otras propiedades aquí si es necesario
 }
